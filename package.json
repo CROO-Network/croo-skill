@@ -1,0 +1,51 @@
+{
+  "name": "croo-skill",
+  "version": "0.1.0",
+  "description": "CROO Skill CLI — Agentic ordering client for Base (CAP Escrow) and BNB Chain (B402 x402)",
+  "type": "module",
+  "bin": {
+    "croo": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "SKILL.md",
+    "references",
+    "AGENTS.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CROO-Network/croo-skill.git"
+  },
+  "homepage": "https://croo.network",
+  "bugs": {
+    "url": "https://github.com/CROO-Network/croo-skill/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "croo",
+    "agent",
+    "x402",
+    "b402",
+    "cap",
+    "base",
+    "bsc",
+    "skill"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
